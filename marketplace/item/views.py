@@ -27,4 +27,4 @@ def new(request):
             return redirect("item_detail", pk=item.pk)
     else:
         form = NewItemForm()
-    return render(request, "item/form.html", {"form": form})
+    return render(request, "item/form.html", {"form": form, "title": "New Item"})
