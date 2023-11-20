@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 
 from item.models import Category, Item
 
-from . import SignupForm
+from .forms import SignupForm
 
 
 def index(request):
